@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
+}
+
+header {
+    background: #00796b; /* Teal color */
+    color: #fff;
+    padding: 20px 0;
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: #004d40; /* Darker teal on hover */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #00796b; /* Teal border */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #00796b; /* Teal color */
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #b2dfdb; /* Light teal background */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #00796b; /* Teal border on focus */
+}
+
+form button {
+    padding: 10px;
+    background: #00796b; /* Teal button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #004d40; /* Darker teal on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #00796b; /* Teal footer */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
